@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milton Software</title>
+    <style>
+        :root {
+            --bg: #2A2A2A;
+            --fg: #E8E8E8;
+            --accent: #D4AF37;
+            --muted: #A0A0A0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            background: var(--bg);
+            color: var(--fg);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem 1.5rem;
+        }
+
+        .container {
+            max-width: 560px;
+            width: 100%;
+            text-align: center;
+        }
+
+        h1 {
+            color: var(--accent);
+            font-size: 2.25rem;
+            font-weight: 600;
+            letter-spacing: 0.04em;
+            margin-bottom: 0.5rem;
+        }
+
+        .tagline {
+            color: var(--muted);
+            font-size: 1rem;
+            margin-bottom: 2.5rem;
+            letter-spacing: 0.02em;
+        }
+
+        .divider {
+            width: 60px;
+            height: 1px;
+            background: var(--accent);
+            margin: 0 auto 2.5rem;
+        }
+
+        .philosophy {
+            font-size: 1.05rem;
+            margin-bottom: 1rem;
+            color: var(--fg);
+        }
+
+        .philosophy strong {
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        .status {
+            color: var(--muted);
+            font-size: 0.95rem;
+            margin-top: 2.5rem;
+        }
+
+        .links {
+            margin-top: 2rem;
+            font-size: 0.9rem;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.15s ease;
+        }
+
+        a:hover {
+            border-bottom-color: var(--accent);
+        }
+
+        footer {
+            margin-top: 3rem;
+            color: var(--muted);
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.75rem;
+            }
+
+            .philosophy {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Milton Software</h1>
+        <div class="tagline">Apps the old way.</div>
+
+        <div class="divider"></div>
+
+        <p class="philosophy"><strong>You buy it, you own it.</strong></p>
+        <p>No accounts. No tracking. No subscriptions that quietly raise their price. No terms that change after the sale.</p>
+
+        <p class="status">Website coming soon.</p>
+
+        <div class="links">
+            <a href="/privacy">Privacy Policy</a>
+        </div>
+
+        <footer>
+            A brand of AIAVS LLC
+        </footer>
+    </div>
+</body>
+</html>
